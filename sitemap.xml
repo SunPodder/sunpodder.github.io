@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/about/</loc>
+    <loc>https://sunpodder.github.io/about/</loc>
     <lastmod>2022-10-30T02:30:42+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/projects/</loc>
+    <loc>https://sunpodder.github.io/projects/</loc>
     <lastmod>2022-10-29T11:10:35+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/contact/</loc>
+    <loc>https://sunpodder.github.io/contact/</loc>
     <lastmod>2022-10-29T11:08:47+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>https://sunpodder.github.io/categories/</loc>
   </url><url>
-    <loc>https://examplesite.com/</loc>
+    <loc>https://sunpodder.github.io/</loc>
   </url><url>
-    <loc>https://examplesite.com/tags/</loc>
+    <loc>https://sunpodder.github.io/tags/</loc>
   </url>
 </urlset>
