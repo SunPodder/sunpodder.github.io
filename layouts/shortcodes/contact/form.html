@@ -1,0 +1,88 @@
+<style>
+    .input {
+        outline: 2px solid var(--border);
+        color: var(--content);
+        min-height: 35px;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    form {
+        width: 100%;
+        display: grid;
+        gap: 1rem;
+
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-rows: auto;
+    }
+
+    .c1 {
+        grid-column: 1 / 2;
+    }
+
+    .c2 {
+        grid-column: 2 / 3;
+    }
+ 
+    .c3 {
+        grid-column: 1 / 3;
+    }
+    .c4 {
+        grid-column: 1 / 2;
+    }
+
+    .container {
+        display: grid;
+    }
+
+    #submit {
+        background: var(--border);
+        padding: 8px;
+        width: 40%;
+    }
+
+    @media only screen and (max-width: 600px){
+        main {
+            display: grid;
+            place-items: center;
+        }
+
+        .c2 {
+            grid-column: 1 / 2;
+        }
+
+        .c3 {
+            grid-column: 1 / 3;
+        }
+
+        .container {
+            place-items: center;
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="container">
+    <form action="/" method="post">
+        <div class="c1">
+            <label for="name">Full Name:</label><br>
+            <input class="input" placeholder="Full name" type="text" name="name" id="name">
+        </div>
+
+        <div class="c2">
+            <label for="email">Email:</label><br>
+            <input class="input" placeholder="Email" type="email" name="email" id="email">
+        </div>
+
+        <div class="c3">
+            <label for="message">Message:</label><br>
+            <textarea class="input" placeholder="Type your message..." name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="c4">
+            <button id="submit" type="submit" >
+                Send
+            </button>
+        </div>
+    </form>
+</div>
