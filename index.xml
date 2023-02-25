@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>SunPodder</title>
+    <title>Sun Podder</title>
     <link>https://sunpodder.github.io/</link>
-    <description>Recent content on SunPodder</description>
+    <description>Recent content on Sun Podder</description>
     <image>
-      <url>https://sunpodder.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://sunpodder.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://sunpodder.github.io/image/0.png</url>
+      <link>https://sunpodder.github.io/image/0.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://sunpodder.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -15,8 +15,8 @@
       <pubDate>Sun, 30 Oct 2022 02:30:42 +0000</pubDate>
       
       <guid>https://sunpodder.github.io/about/</guid>
-      <description>Hi there! My name is Sun, and I&amp;rsquo;m a backend developer with a passion for low-level development. I have extensive experience working with languages like Python and Node.js for building robust and scalable backends. However, my true passion lies in developing embedded systems and creating binary applications that run close to the hardware.
-Over the years, I&amp;rsquo;ve honed my skills in languages like C, C++, and Rust, which are commonly used in low-level development.</description>
+      <description>Hi, I&amp;rsquo;m Sun! I&amp;rsquo;m a backend developer with a passion for low level development. I enjoy working on embedded systems and creating binary applications that can run on a variety of platforms. I&amp;rsquo;m skilled in using Python and NodeJS for backends and C, C++, and Rust for low level development. I also use Golang and Python for common everyday tasks.
+I&amp;rsquo;ve always been fascinated by how technology works, and I love the challenge of working on low level development projects.</description>
     </item>
     
     <item>
@@ -25,7 +25,8 @@ Over the years, I&amp;rsquo;ve honed my skills in languages like C, C++, and Rus
       <pubDate>Sat, 29 Oct 2022 11:10:35 +0000</pubDate>
       
       <guid>https://sunpodder.github.io/projects/</guid>
-      <description></description>
+      <description>I&amp;rsquo;ve worked on a variety of projects over the years, ranging from web applications to low-level systems programming. Here are a few examples of my recent work:
+1. CodeBin - Python/Flask/React This project is a code sharing site similar to Pastebin, where users can share snippets of code with others. I built the backend with Python and Flask, which provides a simple and flexible framework for building web applications. For the frontend, I used React to create a modern and responsive user interface.</description>
     </item>
     
     <item>
@@ -34,11 +35,12 @@ Over the years, I&amp;rsquo;ve honed my skills in languages like C, C++, and Rus
       <pubDate>Sat, 29 Oct 2022 11:08:47 +0000</pubDate>
       
       <guid>https://sunpodder.github.io/contact/</guid>
-      <description>Leave a message. I will get back to you ASAP.
-Full Name:
-Email:
-Message:
-Send You can also find me on</description>
+      <description>I&amp;rsquo;m always interested in connecting with fellow developers, potential employers, or anyone who shares a passion for technology. If you&amp;rsquo;d like to get in touch with me, please use one of the methods listed below:
+Email: contact.sunpodder09@gmail.com
+LinkedIn: Sun Podder
+GitHub: @SunPodder
+Facebook: @sun.podder.09
+Feel free to reach out to me with any questions or comments, or to inquire about potential collaboration opportunities. I&amp;rsquo;ll do my best to respond as quickly as possible.</description>
     </item>
     
   </channel>
