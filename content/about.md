@@ -4,12 +4,12 @@ date: 2022-10-30T02:30:42Z
 draft: false
 ---
 
-Hi there! My name is Sun, and I'm a *backend developer with a passion for low-level development*. I have extensive experience working with languages like **Python and Node.js** for building robust and scalable backends. However, my true passion lies in developing embedded systems and creating binary applications that run close to the hardware.
+Hi, I'm Sun! I'm a backend developer with a passion for low level development. I enjoy working on embedded systems and creating binary applications that can run on a variety of platforms. I'm skilled in using **Python and NodeJS** for backends and **C, C++, and Rust** for low level development. I also use Golang and Python for common everyday tasks.
 
-Over the years, I've honed my skills in languages like **C, C++, and Rust**, which are commonly used in low-level development. I find the intricacies of working with the hardware and optimizing code for performance to be both challenging and rewarding. Nothing excites me more than the prospect of creating something that runs efficiently on a microcontroller or creating an application that requires minimal resources.
+I've always been fascinated by how technology works, and I love the challenge of working on low level development projects. I find it rewarding to see the impact that my work can have on the performance and functionality of software.
 
-In addition to my low-level development work, I also use Golang and Python for common everyday tasks. I find that the versatility of these languages allows me to work on a wide range of projects, from building web applications to writing scripts that automate mundane tasks.
+In addition to my development work, I'm also an active collaborator of the open-source projects **[Termux](https://github.com/termux)** and **[TUR](https://github.com/termux-user-repository)**. Contributing to these projects has given me the opportunity to work with a diverse community of developers and to learn from others' experiences.
 
-I'm constantly learning and pushing myself to improve my skills as a developer. When I'm not coding, you can usually find me tinkering with hardware or reading up on the latest developments in the tech world. I believe that technology has the power to transform lives, and I'm passionate about using my skills to create meaningful solutions that make a difference.
+When I'm not coding, I enjoy reading about new technologies and tweaking with hardwares. I also enjoy hiking and spending time outdoors.
 
-If you're interested in collaborating on a project or just want to chat about technology, feel free to reach out to me through my ![contact page](/contact). I look forward to connecting with you!
+Thanks for visiting my portfolio! If you have any questions or would like to chat about a potential project, feel free to get in touch.

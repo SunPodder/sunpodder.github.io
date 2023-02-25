@@ -1,5 +1,5 @@
 baseURL: "https://sunpodder.github.io/"
-title: "SunPodder"
+title: "Sun Podder"
 paginate: 5
 theme: papermod
 
@@ -18,10 +18,9 @@ params:
   env: development # to enable google analytics, opengraph, twitter-cards and schema.
   title: "Sun Podder's Portfolio"
   description: "Welcome to my portfolio"
-  keywords: [Portfolio]
-  author: Me
+  keywords: ["Sun Podder", "Sun Podder Portfolio", "SunPodder", "Sun", "Sunlight", "Sunlight Portfolio"]
   author: ["Sun"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["/image/0.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto
   disableThemeToggle: false
@@ -45,25 +44,25 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "/image/fav.ico"
+    favicon16x16: "/image/16x16.png"
+    favicon32x32: "/image/32x32.png"
+    apple_touch_icon: "/image/32x32.png"
+    safari_pinned_tab: "/image/0.png"
 
   label:
     text: "Sun Podder"
-    icon: /apple-touch-icon.png
+    icon: ""
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
     title: "Sun Podder"
-    subtitle: "Junior Web Developer"
+    subtitle: "Software Engineer"
     imageUrl: "/image/0.png"
-    imageWidth: 120
-    imageHeight: 120
+    imageWidth: 128
+    imageHeight: 128
     imageTitle: "Sun Podder"
     buttons:
       - name: Projects
@@ -74,64 +73,34 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/SunPodder"
-    - name: stackoverflow
-      url: "https://stackoverflow.com/SunPodder"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/sun-podder-610a63211"
-
-  contactIcons:
-    - name: github
-      text: Github
-      url: "https://github.com/SunPodder"
-    - name: linkedin
-      text: LinkedIn
-      url: "https://www.linkedin.com/in/sun-podder-610a63211"
     - name: facebook
-      text: Facebook
       url: "https://facebook.com/sun.podder.09"
-
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
-      SiteVerificationTag: "XYZabc"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/sun-podder-610a63211"
 
   cover:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/SunPodder/sunpodder.github.io/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
-
-  # for search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
     - identifier: about
       name: About
       url: /about/
-      weight: 10
+      weight: 20
     - identifier: projects
       name: Projects
       url: /projects/
-      weight: 20
+      weight: 30
     - identifier: contact
       name: Contact
       url: /contact/
-      weight: 30
+      weight: 40
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true

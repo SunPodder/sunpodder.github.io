@@ -2,13 +2,18 @@
 title: "Contact"
 date: 2022-10-29T11:08:47Z
 draft: false
-Icons:
-  - name: github
-    url: https
 ---
 
-Leave a message. I will get back to you ASAP.
+I'm always interested in connecting with fellow developers, potential employers, or anyone who shares a passion for technology. If you'd like to get in touch with me, please use one of the methods listed below:
 
-{{< contact/form action="/" >}}
+**Email**: [contact.sunpodder09@gmail.com](mailto:contact.sunpodder09@gmail.com)
 
-You can also find me on
+**LinkedIn**: [Sun Podder](https://www.linkedin.com/in/sun-podder-610a63211)
+
+**GitHub**: [@SunPodder](https://github.com/SunPodder)
+
+**Facebook**: [@sun.podder.09](https://facebook.com/sun.podder.09)
+
+Feel free to reach out to me with any questions or comments, or to inquire about potential collaboration opportunities. I'll do my best to respond as quickly as possible.
+
+Thank you for your interest, and I look forward to hearing from you soon!
