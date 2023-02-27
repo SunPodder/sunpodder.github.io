@@ -17,7 +17,7 @@ minify:
 params:
   env: development # to enable google analytics, opengraph, twitter-cards and schema.
   title: "Sun Podder's Portfolio"
-  description: "Welcome to my portfolio"
+  description: "Hi, I'm Sun! I'm a backend developer with a passion for low level development. I enjoy working on embedded systems and creating binary applications that can run on a variety of platforms."
   keywords: ["Sun Podder", "Sun Podder Portfolio", "SunPodder", "Sun", "Sunlight", "Sunlight Portfolio"]
   author: ["Sun"] # multiple authors
   images: ["/image/0.png"]
