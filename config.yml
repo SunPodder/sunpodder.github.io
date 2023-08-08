@@ -21,7 +21,7 @@ params:
   keywords: ["Sun Podder", "Sun Podder Portfolio", "SunPodder", "Sun", "Sunlight", "Sunlight Portfolio"]
   author: ["Sun"] # multiple authors
   images: ["/image/0.png"]
-  DateFormat: "January 2, 2006"
+  DateFormat: "January 2, 2000"
   defaultTheme: auto
   disableThemeToggle: false
 
@@ -42,8 +42,8 @@ params:
   tocopen: false
 
   assets:
-    # disableHLJS: true # to disable highlight.js
-    # disableFingerprinting: true
+    disableHLJS: true # to disable highlight.js
+    disableFingerprinting: true
     favicon: "/image/fav.ico"
     favicon16x16: "/image/16x16.png"
     favicon32x32: "/image/32x32.png"
@@ -61,8 +61,8 @@ params:
     title: "Sun Podder"
     subtitle: "Software Engineer"
     imageUrl: "/image/0.png"
-    imageWidth: 128
-    imageHeight: 128
+    imageWidth: 256
+    imageHeight: 256
     imageTitle: "Sun Podder"
     buttons:
       - name: Projects

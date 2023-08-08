@@ -8,7 +8,7 @@ I'm always interested in connecting with fellow developers, potential employers,
 
 **Email**: [contact.sunpodder09@gmail.com](mailto:contact.sunpodder09@gmail.com)
 
-**LinkedIn**: [Sun Podder](https://www.linkedin.com/in/sun-podder-610a63211)
+**LinkedIn**: [Sun Podder](https://www.linkedin.com/in/sunpodder)
 
 **GitHub**: [@SunPodder](https://github.com/SunPodder)
 
