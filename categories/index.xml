@@ -8,6 +8,7 @@
       <url>https://sunpodder.github.io/image/0.png</url>
       <link>https://sunpodder.github.io/image/0.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://sunpodder.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://sunpodder.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
