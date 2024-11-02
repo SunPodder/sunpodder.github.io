@@ -27,10 +27,7 @@
 			property="og:description"
 			content="An inquisitive Software Engineer undergrad student with a diverse skillset in Web Development, Desktop Software (including GUI and CLI), and DevOps."
 		/>
-		<meta
-			property="og:image"
-			content="https://github.com/SunPodder.png"
-		/>
+		<meta property="og:image" content="https://github.com/SunPodder.png" />
 	</head>
 	<body>
 		<main>
@@ -214,13 +211,31 @@
 						<div class="tech-stack">
 							<span>Typescript</span>
 							<span>Vue</span>
-							<span>Nuxt</span>
 							<span>CSS</span>
 						</div>
 						<div class="social-icons">
 							<span>
 								<a href="https://github.com/SunPodder/photo-editor">
 									<i class="fa-brands fa-github"></i>
+								</a>
+							</span>
+							<span>
+								<a href="https://sunpodder.github.io/photo-editor">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-move-up-right"
+									>
+										<path d="M13 5H19V11"></path>
+										<path d="M19 5L5 19"></path>
+									</svg>
 								</a>
 							</span>
 						</div>
@@ -293,5 +308,11 @@
 				</div>
 			</section>
 		</main>
+		<script>
+			let a = document.querySelectorAll(".social-icons a");
+			a.forEach((el) => {
+				el.target = "_blank";
+			});
+		</script>
 	</body>
 </html>
