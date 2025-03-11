@@ -1,12 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	font-family: "Lato", "Franklin Gothic Medium", "Arial Narrow", Arial,
+		sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
+
+.section-title {
+	@apply bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text font-medium text-xl;
+}
+
+/* set accent color to scrollbar, wheel and text selections */
+*::-webkit-scrollbar {
+	width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #101828;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: #4caf50;
+	border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: #45a049;
+}
+
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #4caf50 #101828;
+}
+
+::selection {
+	@apply bg-white/90 text-black;
+}
+
