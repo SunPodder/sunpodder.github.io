@@ -25,9 +25,7 @@ function Contact() {
 	return (
 		<div className="text-center px-4 pb-20" id="contact">
 			<div className="pt-20">
-				<span className="section-title">
-					CONTACT ME
-				</span>
+				<span className="section-title">CONTACT ME</span>
 			</div>
 			<h2 className="text-5xl font-bold mt-5">Let's Connect</h2>
 			<p className="mt-3 text-gray-400 text-lg max-w-2xl mx-auto">
@@ -41,6 +39,7 @@ function Contact() {
 					target="_blank"
 					rel="noopener noreferrer"
 					className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
+					aria-label="Visit my GitHub profile"
 				>
 					<Github className="w-6 h-6" />
 				</a>
@@ -49,6 +48,7 @@ function Contact() {
 					target="_blank"
 					rel="noopener noreferrer"
 					className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
+					aria-label="Connect with me on LinkedIn"
 				>
 					<Linkedin className="w-6 h-6" />
 				</a>
@@ -57,6 +57,7 @@ function Contact() {
 					target="_blank"
 					rel="noopener noreferrer"
 					className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
+					aria-label="Message me on Facebook"
 				>
 					<Facebook className="w-6 h-6" />
 				</a>
@@ -65,6 +66,7 @@ function Contact() {
 					target="_blank"
 					rel="noopener noreferrer"
 					className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-colors"
+					aria-label="Email me directly"
 				>
 					<Mail className="w-6 h-6" />
 				</a>
