@@ -17,7 +17,7 @@ const Link = memo(({
   return (
     <span
       className={twMerge(`
-        cursor-pointer px-5 py-2 rounded-4xl transition-colors duration-300 ease-in-out
+        cursor-pointer px-5 py-2 rounded-4xl transition-colors duration-100 ease-in
         ${isActive ? "bg-white/90 text-black" : "bg-transparent text-white hover:bg-white/30"}
       `)}
       onClick={() => onClick(href)}

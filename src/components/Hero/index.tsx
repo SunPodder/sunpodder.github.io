@@ -1,6 +1,7 @@
 import { ArrowDown } from "lucide-react";
 import TypewriterEffect from "./TypeWriterEffect";
 import StarField from "./StarField";
+import { useActiveSection } from "../../hooks/active-section";
 
 function Avatar({ className }: { className?: string }) {
 	return (
@@ -18,8 +19,13 @@ function Avatar({ className }: { className?: string }) {
 }
 
 function Hero() {
+	const { navigateTo } = useActiveSection();
+
 	return (
-		<div className="overflow-auto h-screen backdrop-blur-2xl px-8" id="home">
+		<div
+			className="overflow-auto h-screen backdrop-blur-2xl px-8"
+			id="home"
+		>
 			<Avatar className="mt-36 sm:mt-44 md:mt-56" />
 			<h2 className="text-4xl font-bold text-center mt-5">
 				Building Exceptional User Experiences
@@ -33,6 +39,7 @@ function Hero() {
 				<button
 					className="border border-gray-400 rounded-xl px-4 py-2 text-lg font-medium flex
 				items-center gap-1 cursor-pointer hover:bg-gray-100/10"
+					onClick={() => navigateTo("projects")}
 				>
 					Explore My Work
 					<ArrowDown className="w-6 h-6" />
@@ -40,6 +47,7 @@ function Hero() {
 				<button
 					className="bg-white text-black px-4 py-2 rounded-xl text-lg font-medium cursor-pointer
 				hover:bg-white/90"
+					onClick={() => navigateTo("contact")}
 				>
 					&#128075; Let's Connect
 				</button>
