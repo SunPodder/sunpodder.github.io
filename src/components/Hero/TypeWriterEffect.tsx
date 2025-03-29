@@ -16,7 +16,7 @@ function TypewriterEffect() {
 	const [isWaiting, setIsWaiting] = useState(false);
 
 	useEffect(() => {
-		let timeout: number;
+		let timeout: NodeJS.Timeout;
 		const currentMessage = messages[currentMessageIndex];
 
 		if (isWaiting) {

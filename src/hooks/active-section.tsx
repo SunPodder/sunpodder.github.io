@@ -94,7 +94,7 @@ export function useActiveSection() {
       };
       
       // Throttled scroll handler
-      let scrollTimeout: number;
+      let scrollTimeout: NodeJS.Timeout | null = null;
       const throttledScrollHandler = () => {
         if (scrollTimeout) clearTimeout(scrollTimeout);
         scrollTimeout = setTimeout(handleScroll, 100);

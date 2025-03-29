@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useRef, useEffect } from "react";
 import { twMerge } from "tailwind-merge";
 import { useActiveSection } from "../../hooks/active-section";
 
@@ -14,11 +14,42 @@ const Link = memo(({
   isActive: boolean;
   onClick: (href: string) => void;
 }) => {
+  // Use a ref to track previous active state to smooth transitions
+  const wasActive = useRef(isActive);
+  const transitionTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  
+  useEffect(() => {
+    // Clear any existing timeout
+    if (transitionTimeoutRef.current) {
+      clearTimeout(transitionTimeoutRef.current);
+    }
+    
+    // If becoming active, update immediately
+    if (isActive) {
+      wasActive.current = true;
+    } 
+    // If becoming inactive, use a very short delay (just enough to prevent flickering)
+    else if (wasActive.current && !isActive) {
+      transitionTimeoutRef.current = setTimeout(() => {
+        wasActive.current = false;
+      }, 25); // Much shorter delay - just enough to prevent flickering
+    }
+    
+    return () => {
+      if (transitionTimeoutRef.current) {
+        clearTimeout(transitionTimeoutRef.current);
+      }
+    };
+  }, [isActive]);
+  
+  // Use the stabilized active state for styling
+  const stableActive = wasActive.current;
+  
   return (
     <span
       className={twMerge(`
-        cursor-pointer px-5 py-2 rounded-4xl transition-colors duration-100 ease-in
-        ${isActive ? "bg-white/90 text-black" : "bg-transparent text-white hover:bg-white/30"}
+        cursor-pointer px-5 py-2 rounded-4xl transition-colors duration-50 ease-in
+        ${stableActive ? "bg-white/90 text-black" : "bg-transparent text-white hover:bg-white/30"}
       `)}
       onClick={() => onClick(href)}
       role="link"
