@@ -40,6 +40,60 @@
 	@apply bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text font-medium text-xl;
 }
 
+/* Tech Pills Styles */
+.tech-pill {
+	@apply py-2 px-4 rounded-full relative overflow-hidden transition-all duration-300 cursor-default;
+	transform-origin: center;
+	backdrop-filter: blur(5px);
+}
+
+.tech-pill:hover {
+	@apply shadow-md shadow-blue-500/20;
+	transform: translateY(-1px);
+}
+
+.tech-name {
+	@apply relative z-10 font-medium;
+	display: inline-block;
+}
+
+.tech-icon {
+	@apply transition-transform duration-300 align-text-bottom;
+}
+
+.tech-pill:hover .tech-icon {
+	@apply text-white;
+	transform: scale(1.2);
+}
+
+.tech-shine {
+	position: absolute;
+	top: -50%;
+	left: -100%;
+	width: 50px;
+	height: 200%;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		rgba(255, 255, 255, 0.2),
+		transparent
+	);
+	transform: rotate(35deg);
+	transition: none;
+	pointer-events: none;
+}
+
+.tech-pill:hover .tech-shine {
+	left: 150%;
+	transition: 0.7s;
+}
+
+/* Reset animation state when not hovering */
+.tech-pill:not(:hover) .tech-shine {
+	left: -100%;
+	transition: none;
+}
+
 /* set accent color to scrollbar, wheel and text selections */
 *::-webkit-scrollbar {
 	width: 12px;
