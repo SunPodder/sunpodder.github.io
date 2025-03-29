@@ -33,7 +33,7 @@ function StarField() {
 	}, []);
 
 	return (
-		<div className="fixed inset-0 pointer-events-none z-[-1] max-w-screen max-h-screen overflow-x-hidden">
+		<div className="fixed inset-0 pointer-events-none z-[-1] max-w-screen max-h-screen overflow-hidden">
 			{stars.map((star) => (
 				<motion.div
 					key={star.id}

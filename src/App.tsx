@@ -13,7 +13,7 @@ function App() {
 			<div
 				style={{
 					background: `radial-gradient(circle at 20% 20%, rgba(16, 185, 129, 0.15) 0%, transparent 30%),
-			radial-gradient(circle at 80% 30%, rgba(16, 185, 129, 0.1) 0%, transparent 40%),
+			radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 40%),
 			radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.2) 0%, transparent 50%)`,
 				}}
 			>
