@@ -27,7 +27,7 @@ function About() {
 			<div className="flex flex-col lg:flex-row gap-10 mt-12 items-start justify-center max-w-6xl mx-auto relative">
 				{/* About paragraph */}
 				<div className="lg:w-[calc(50%-1px)] text-left lg:pl-8 lg:pr-12">
-					<h3 className="text-2xl font-semibold mb-4 text-center lg:text-left">My Background</h3>
+					<h3 className="text-2xl font-semibold mb-4 text-center">My Background</h3>
 					<p className="text-gray-200 leading-relaxed">
 						Self-taught full stack developer with a passion for creating
 						elegant digital solutions. While completing high school, I've
@@ -50,10 +50,10 @@ function About() {
 
 				{/* Technologies */}
 				<div className="lg:w-[calc(50%-1px)] lg:pl-12 lg:pr-8">
-					<h3 className="text-2xl font-semibold mb-5 text-center lg:text-left">My Tech Stack</h3>
+					<h3 className="text-2xl font-semibold mb-5 text-center">My Tech Stack</h3>
 					
 					{/* Unified tech grid */}
-					<div className="flex flex-wrap gap-3">
+					<div className="flex flex-wrap gap-3 justify-center md:justify-start">
 						<div className="tech-pill bg-blue-900/30 border border-blue-800 hover:border-blue-500 group">
 							<FileType className="inline-block mr-1 tech-icon" size={16} />
 							<span className="tech-name group-hover:scale-110 transition-transform">TypeScript</span>

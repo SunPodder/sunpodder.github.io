@@ -12,6 +12,16 @@ const projects = [
 		],
 	},
 	{
+		title: "URL Shortening Service",
+		image: "/short.png",
+		href: "https://github.com/SunPodder/shorty",
+		points: [
+			"Scalable URL shortener: React frontend, serverless Go backend on AWS (API Gateway, Lambda, DynamoDB).",
+			"Auth/unauth URL shortening with user dashboard (stats).",
+			"AWS backend (Go) with Terraform IaC for high availability & cost-efficiency.",
+		],
+	},
+	{
 		title: "Social Media Application",
 		image: "/social.png",
 		href: "https://github.com/SunPodder/chirper",
@@ -19,16 +29,6 @@ const projects = [
 			"Full-featured social platform with content creation, user interactions, and discovery features",
 			"Utilized SvelteKit for lightning-fast page transitions and optimized client-side rendering",
 			"Implemented SurrealDB for flexible document storage with powerful relation capabilities",
-		],
-	},
-	{
-		title: "URL Shortening Service",
-		image: "/short.png",
-		href: "https://github.com/SunPodder/shorty",
-		points: [
-			"Minimalist yet powerful URL shortening service with custom alias support",
-			"Developed detailed click analytics system tracking geographic data and referral sources",
-			"Built with React for the frontend and PocketBase for rapid backend development",
 		],
 	},
 ];

@@ -26,7 +26,7 @@ function Hero() {
 			className="overflow-auto h-screen backdrop-blur-2xl px-8"
 			id="home"
 		>
-			<Avatar className="mt-36 sm:mt-44 md:mt-56" />
+			<Avatar className="mt-[calc(45%)] sm:mt-44 md:mt-56" />
 			<h2 className="text-4xl font-bold text-center mt-5">
 				Building Exceptional User Experiences
 			</h2>
