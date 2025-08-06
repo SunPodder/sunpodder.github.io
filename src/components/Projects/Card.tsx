@@ -39,7 +39,7 @@ function Card({
 
 			<div className="mt-4 md:my-auto w-full md:max-w-4/5 h-fit border-4 border-app-surface bg-app-bg rounded-lg p-3 md:min-w-4xl max-w-full">
 				<div>
-					<img src={image} alt={title} height="auto" width={720} />
+					<img src={image} alt={title} height="auto" width={720} loading="lazy"/>
 				</div>
 			</div>
 		</div>

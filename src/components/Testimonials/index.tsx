@@ -26,7 +26,7 @@ function Testimonials() {
                     >
                         <div className="flex items-center justify-center mb-4">
                             <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-app-accent/30">
-                                <img src={`https://randomuser.me/api/portraits/men/${idx + 18}.jpg`} alt={`${testimonial.author}`} className="rounded-full" width={48} height={48} />
+                                <img src={`https://randomuser.me/api/portraits/men/${idx + 18}.jpg`} alt={`${testimonial.author}`} className="rounded-full" width={48} height={48} loading="lazy" />
                             </span>
                         </div>
                         <p className="text-app-fg-muted italic flex-1 flex items-center justify-center">

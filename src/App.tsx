@@ -1,10 +1,12 @@
+import React from "react";
 import About from "./components/About";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Nav";
-import Projects from "./components/Projects";
-import Testimonials from "./components/Testimonials";
+
+const Projects = React.lazy(() => import("./components/Projects"));
+const Testimonials = React.lazy(() => import("./components/Testimonials"));
+const Contact = React.lazy(() => import("./components/Contact"));
 
 function App() {
 	return (

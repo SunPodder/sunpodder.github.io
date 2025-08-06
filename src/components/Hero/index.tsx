@@ -10,6 +10,7 @@ function Avatar({ className }: { className?: string }) {
 				src="/sun.jpeg"
 				alt=""
 				className="w-32 h-32 rounded-full border-2 border-app-surface"
+				fetchPriority="high"
 			/>
 			<div className="flex items-center gap-2 bg-app-surface px-4 py-2 rounded-xl transform -translate-y-3 border-2 border-app-accent">
 				<div className="w-2 h-2 bg-green-500 rounded-full"></div>
