@@ -1,100 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
 @import "tailwindcss";
 
-:root {
-	font-family: "Lato", "Franklin Gothic Medium", "Arial Narrow", Arial,
-		sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+@theme {
+	--color-app-bg: var(--color-bg);
+	--color-app-surface: var(--color-surface);
+	--color-app-fg: var(--color-fg);
+	--color-app-accent: var(--color-accent);
 
+	--color-app-fg-muted: oklch(from var(--color-fg) l calc(c - 0.005) h);
+	--color-app-accent-hover: oklch(
+		from var(--color-accent) calc(l + 0.05) c h
+	);
+	--color-app-accent-subtle: oklch(
+		from var(--color-accent) calc(l - 0.05) calc(c - 0.1) h / 30%
+	);
+
+	--font-sans: "Inter", "Segoe UI", "Helvetica Neue", sans-serif;
+	--font-mono: "JetBrains Mono", "Fira Code", "Menlo", monospace;
+	--font-space: "Space Grotesk", "Segoe UI", "Helvetica Neue", sans-serif;
+
+	--leading-tight: 1.2;
+	--leading-normal: 1.5;
+	--leading-loose: 1.75;
+
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-lg: 1.125rem;
+	--text-xl: 1.25rem;
+	--text-2xl: 1.5rem;
+	--text-3xl: 1.875rem;
+}
+
+:root {
+	--color-bg: oklch(0.2 0 0);
+	--color-surface: oklch(0.26 0.01 270);
+	--color-fg: oklch(0.88 0.01 270);
+	--color-accent: oklch(0.72 0.22 255);
+	font-family: var(--font-sans);
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-	font-family: "Lato";
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXiWtFCc.woff2)
-		format("woff2");
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
-		U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+/* Typography Styles */
+body {
+	@apply bg-app-bg text-app-fg leading-normal font-sans text-base;
 }
 
-@font-face {
-	font-family: "Lato";
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
-	src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2)
-		format("woff2");
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-		U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
-		U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+p {
+	@apply text-base leading-normal text-app-fg-muted;
 }
 
 .section-title {
-	@apply bg-gradient-to-r from-green-400 to-blue-400 text-transparent bg-clip-text font-medium text-xl;
+	background: linear-gradient(to right, var(--color-app-accent), oklch(from var(--color-app-accent) l c calc(h + 60)));
+	background-clip: text;
+	-webkit-background-clip: text;
+	@apply text-2xl font-bold leading-tight text-transparent uppercase;
 }
 
-/* Tech Pills Styles */
-.tech-pill {
-	@apply py-2 px-4 rounded-full relative overflow-hidden transition-all duration-300 cursor-default;
-	transform-origin: center;
-	backdrop-filter: blur(5px);
-}
-
-.tech-pill:hover {
-	@apply shadow-md shadow-blue-500/20;
-	transform: translateY(-1px);
-}
-
-.tech-name {
-	@apply relative z-10 font-medium;
-	display: inline-block;
-}
-
-.tech-icon {
-	@apply transition-transform duration-300 align-text-bottom;
-}
-
-.tech-pill:hover .tech-icon {
-	@apply text-white;
-	transform: scale(1.2);
-}
-
-.tech-shine {
-	position: absolute;
-	top: -50%;
-	left: -100%;
-	width: 50px;
-	height: 200%;
-	background: linear-gradient(
-		90deg,
-		transparent,
-		rgba(255, 255, 255, 0.2),
-		transparent
-	);
-	transform: rotate(35deg);
-	transition: none;
-	pointer-events: none;
-}
-
-.tech-pill:hover .tech-shine {
-	left: 150%;
-	transition: 0.7s;
-}
-
-/* Reset animation state when not hovering */
-.tech-pill:not(:hover) .tech-shine {
-	left: -100%;
-	transition: none;
-}
-
-/* set accent color to scrollbar, wheel and text selections */
 *::-webkit-scrollbar {
 	width: 12px;
 }
@@ -104,19 +70,27 @@
 }
 
 *::-webkit-scrollbar-thumb {
-	background: #4caf50;
+	background: var(--color-app-accent);
 	border-radius: 10px;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-	background: #45a049;
+	background: var(--color-app-accent-hover);
 }
 
 * {
 	scrollbar-width: thin;
-	scrollbar-color: #4caf50 #101828;
+	scrollbar-color: var(--color-app-accent) #101828;
 }
 
 ::selection {
 	@apply bg-white/90 text-black;
+}
+
+.animate-tech-scroll {
+	animation: tech-scroll 16s linear infinite;
+}
+@keyframes tech-scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-183%); }
 }

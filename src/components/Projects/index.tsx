@@ -2,13 +2,33 @@ import Card from "./Card";
 
 const projects = [
 	{
+		title: "Dokanzo",
+		href: "",
+		image: "/dokanzo.png",
+		points: [
+			"Full-featured Shopify-style multi-tenant e-commerce platform with support for local Bangladeshi payment methods like bKash.",
+			"Architected for scalability—each tenant can onboard hundreds of users with isolated store data and product catalogs.",
+			"Prioritized security (auth, validation, tenant isolation) and performance for large concurrent user bases.",
+		],
+	},
+	{
+		title: "Relay",
+		image: "/relay.png",
+		href: "https://github.com/SunPodder/Relay",
+		points: [
+			"Syncs Android notifications to a Linux desktop in real-time using a custom TCP-based protocol.",
+			"Built the Android client in Kotlin, with a Qt6 C++ desktop app for a native, fast UX.",
+			"Designed to solve the distraction of checking phones mid-work by mirroring only important notifications directly to the desktop.",
+		],
+	},
+	{
 		title: "Real-time Chat Application",
 		image: "/chat.png",
 		href: "https://github.com/SunPodder/chat-app",
 		points: [
-			"Real-time messaging platform with intuitive interface and comprehensive functionality",
-			"Built with React, Express, PostgreSQL for data persistence, and Socket.IO for real-time communication",
-			"Integrated Redis for optimized caching, significantly improving response times",
+			"One-to-one messaging with real-time updates, typing indicators, and image sharing.",
+			"Built with React, Express, Socket.IO, PostgreSQL, and Redis.",
+			"Solo-developed to master real-time communication and performance optimization.",
 		],
 	},
 	{
@@ -16,9 +36,9 @@ const projects = [
 		image: "/short.png",
 		href: "https://github.com/SunPodder/shorty",
 		points: [
-			"Scalable URL shortener: React frontend, serverless Go backend on AWS (API Gateway, Lambda, DynamoDB).",
-			"Auth/unauth URL shortening with user dashboard (stats).",
-			"AWS backend (Go) with Terraform IaC for high availability & cost-efficiency.",
+			"A serverless URL shortener with dashboards and analytics for authenticated users.",
+			"Technologies: React, Go, AWS (API Gateway, Lambda, DynamoDB), Terraform.",
+			"Solo project exploring serverless architecture and cloud services.",
 		],
 	},
 	{
@@ -26,23 +46,21 @@ const projects = [
 		image: "/social.png",
 		href: "https://github.com/SunPodder/chirper",
 		points: [
-			"Full-featured social platform with content creation, user interactions, and discovery features",
-			"Utilized SvelteKit for lightning-fast page transitions and optimized client-side rendering",
-			"Implemented SurrealDB for flexible document storage with powerful relation capabilities",
+			"A lightweight platform for posts and interactions, featuring a custom content discovery algorithm.",
+			"Developed with SvelteKit and SurrealDB for its hybrid data model.",
+			"Solo-built to enhance social feature skills.",
 		],
 	},
 ];
 
 function Projects() {
 	return (
-		<div className="text-center px-4" id="projects">
+		<div className="text-center px-4 bg-app-bg text-app-fg" id="projects">
 			<div className="pt-20">
-				<span className="section-title">REAL-WORLD RESULTS</span>
+				<span className="section-title">Featured Projects</span>
 			</div>
-			<h2 className="text-5xl font-bold mt-5">Featured Projects</h2>
-			<p className="mt-3 text-gray-400 text-lg">
-				See how I transformed concepts into enganging digital
-				experiences.
+			<p className="text-app-fg-muted text-lg">
+				See how I transform concepts into engaging digital experiences.
 			</p>
 
 			<div className="w-full flex items-center flex-col">

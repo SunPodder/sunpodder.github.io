@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const messages = [
-	"Available for new projects",
-	"Full-stack developer",
-	"React & TypeScript expert",
-	"UI/UX enthusiast",
-	"Open to collaboration",
+	"Available for projects",
+	"Full-stack Developer",
+	"Problem Solver",
+	"Open Source Contributor",
 ];
 
 function TypewriterEffect() {
