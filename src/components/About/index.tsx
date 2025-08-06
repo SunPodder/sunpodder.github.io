@@ -1,16 +1,3 @@
-import { 
-	FileType, 
-	Braces, 
-	Crop, 
-	LayoutGrid, 
-	Database, 
-	PenTool,
-	GalleryVerticalEnd,
-	ServerCog,
-	ArrowRightLeft,
-	Lightbulb,
-	Binary
-} from "lucide-react";
 import Technologies from "../Technologies";
 
 function About() {
