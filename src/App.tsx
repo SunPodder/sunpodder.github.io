@@ -9,6 +9,14 @@ const Testimonials = React.lazy(() => import("./components/Testimonials"));
 const Contact = React.lazy(() => import("./components/Contact"));
 
 function App() {
+	const [isClientReady, setIsClientReady] = React.useState(false);
+
+	React.useEffect(() => {
+		requestIdleCallback(() => {
+			setIsClientReady(true);
+		});
+	}, []);
+
 	return (
 		<div>
 			<Navbar />
@@ -22,11 +30,14 @@ function App() {
 				<Hero />
 				<About />
 			</div>
-			<React.Suspense fallback={<div>Loading...</div>}>
-				<Projects />
-				<Testimonials />
-				<Contact />
-			</React.Suspense>
+
+			{isClientReady && (
+				<React.Suspense fallback={<div>Loading...</div>}>
+					<Projects />
+					<Testimonials />
+					<Contact />
+				</React.Suspense>
+			)}
 			<Footer />
 		</div>
 	);
