@@ -22,9 +22,11 @@ function App() {
 				<Hero />
 				<About />
 			</div>
-			<Projects />
-			<Testimonials />
-			<Contact />
+			<React.Suspense fallback={<div>Loading...</div>}>
+				<Projects />
+				<Testimonials />
+				<Contact />
+			</React.Suspense>
 			<Footer />
 		</div>
 	);
