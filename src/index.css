@@ -84,7 +84,7 @@ p {
 }
 
 ::selection {
-	@apply bg-white/90 text-black;
+	@apply bg-white/10 text-app-accent;
 }
 
 .animate-tech-scroll {

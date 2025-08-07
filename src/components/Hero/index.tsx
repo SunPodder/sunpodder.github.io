@@ -7,7 +7,7 @@ function Avatar({ className }: { className?: string }) {
 	return (
 		<div className={`flex flex-col items-center ${className}`}>
 			<img
-				src="/sun.jpeg"
+				src="/sun.png"
 				alt=""
 				className="w-32 h-32 rounded-full border-2 border-app-surface"
 				fetchPriority="high"
@@ -28,7 +28,7 @@ function Hero() {
 			className="overflow-auto h-screen backdrop-blur-2xl px-8 text-app-fg"
 			id="home"
 		>
-			<Avatar className="mt-32 sm:mt-44 md:mt-56" />
+			<Avatar className="mt-[calc(60%)] sm:mt-44 md:mt-56" />
 			<h2 className="text-2xl md:text-3xl font-bold text-center mt-4 text-app-fg">
 				Full-Stack & Systems Developer
 			</h2>

@@ -6,8 +6,8 @@ const projects = [
 		href: "",
 		image: "/dokanzo.png",
 		points: [
-			"Full-featured Shopify-style multi-tenant e-commerce platform with support for local Bangladeshi payment methods like bKash.",
-			"Architected for scalability—each tenant can onboard hundreds of users with isolated store data and product catalogs.",
+			"Full-featured Shopify-style multi-tenant e-commerce platform with native support for local Bangladeshi payment methods like bKash.",
+			"Architected for scalability — each tenant can onboard hundreds of users with isolated store data and product catalogs.",
 			"Prioritized security (auth, validation, tenant isolation) and performance for large concurrent user bases.",
 		],
 	},

@@ -9,7 +9,7 @@ function Testimonials() {
                 about working with me.
             </p>
 
-            <div className="lg:mx-40 mt-10 flex justify-center items-stretch gap-8 h-full">
+            <div className="lg:mx-40 mt-10 flex flex-col md:flex-row justify-center items-stretch gap-8 h-full">
                 {[
                     {
                         text: "“Delivered clean code fast, and even suggested improvements we didn’t think of. Super easy to work with.”",

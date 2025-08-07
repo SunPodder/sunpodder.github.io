@@ -12,7 +12,7 @@ function Contact() {
 			className="relative text-center px-4 py-24 text-app-bg rounded-3xl shadow-2xl max-w-3xl mx-auto mt-16"
 			id="contact"
 		>
-			<div className="absolute inset-0 pointer-events-none rounded-3xl border-4 border-app-accent/40 animate-pulse" style={{zIndex:0}} />
+			<div className="absolute inset-0 pointer-events-none m-4 rounded-3xl border-4 border-app-accent/40 animate-pulse shadow-lg shadow-app-accent" style={{zIndex:0}} />
 			<div className="relative z-10">
 				<span className="section-title text-4xl font-extrabold tracking-tight mb-4 block text-app-bg drop-shadow-lg">Let’s Build Something Exceptional</span>
 				<p className="text-app-bg/80 text-xl max-w-2xl mx-auto font-medium mb-8">
@@ -60,7 +60,7 @@ function Contact() {
 
 				<a
 					href="mailto:contact.sunpodder09@gmail.com"
-					className="inline-block px-8 py-5 rounded-2xl font-bold text-2xl bg-app-bg text-app-accent border-4 border-app-accent shadow-xl hover:bg-app-accent hover:text-app-bg hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-app-accent"
+					className="inline-block px-8 py-5 rounded-2xl font-bold text-lg md:text-2xl bg-app-bg text-app-accent border-4 border-app-accent shadow-xl hover:bg-app-accent hover:text-app-bg hover:scale-105 transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-app-accent"
 					style={{letterSpacing: '0.03em'}}
 				>
 					📬 Get in Touch
