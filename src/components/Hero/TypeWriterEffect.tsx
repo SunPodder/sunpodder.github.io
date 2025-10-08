@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const messages = [
 	"Available for projects",
-	"Full-stack Developer",
-	"Problem Solver",
-	"Open Source Contributor",
+	"Software Engineer",
+	"Systems Engineer",
+	"DevOps Enthusiast",
 ];
 
 function TypewriterEffect() {

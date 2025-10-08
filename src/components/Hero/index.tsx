@@ -30,7 +30,7 @@ function Hero() {
 		>
 			<Avatar className="mt-[calc(60%)] sm:mt-44 md:mt-56" />
 			<h2 className="text-2xl md:text-3xl font-bold text-center mt-4 text-app-fg">
-				Full-Stack & Systems Developer
+				Full-Stack & Systems Engineer
 			</h2>
 			<p className="text-center mt-2 text-lg text-app-fg-muted">
 				Cross-platform tools and systems built for real-world impact.

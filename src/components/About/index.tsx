@@ -26,7 +26,7 @@ function About() {
 				</div>
 				<div className="rounded-2xl bg-app-surface/80 p-8 flex flex-col items-center shadow-md">
 					<span className="text-4xl font-bold text-app-accent font-space">3+ Years</span>
-					<span className="mt-2 text-app-fg-muted text-lg text-center">Hands-On Experience as a Self-Taught Developer</span>
+					<span className="mt-2 text-app-fg-muted text-lg text-center">Hands-On Experience as a Self-Taught Engineer</span>
 				</div>
 			</div>
 
